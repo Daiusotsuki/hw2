@@ -1,0 +1,131 @@
+/* Global Styles */
+body {
+    background: url('ptrbackground.jpg') no-repeat center top, #00569f; /* Set background image and prevent it from repeating */
+    background-size: 100% 100%; /* Make the background image cover the entire viewport */
+    color: #666666; /* Set global text color */
+    font-family: Arial, Helvetica, sans-serif; /* Set global font */
+    margin: 0; /* Remove global margin */
+    padding: 0; /* Remove global padding */
+}
+
+/* Keep block elements displayed correctly */
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+    display: block; /* Ensure these HTML5 block elements are displayed as block elements in older browsers */
+}
+
+/* Wrapper Styles */
+#wrapper {
+    width: 80%; /* Set the width of the wrapper to 80% of its parent container */
+    min-width: 600px; /* Set the minimum width of the wrapper to 600px */
+    margin: 0 auto; /* Center the wrapper horizontally */
+    background: white; /* Set the background color of the wrapper to white */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Add a semi-transparent black shadow */
+    border-radius: 8px; /* Set border radius */
+    overflow: hidden; /* Hide content that overflows the wrapper */
+    position: relative; /* Ensure child elements are positioned relative to the wrapper */
+}
+
+/* Header Styles */
+header {
+    background: #002f6c url('sunset.jpg') no-repeat center center; /* Set background image and color */
+    background-size: 100% 100%; /* Make the background image cover the entire header */
+    color: white; /* Set text color inside the header to white */
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Set padding to 20px */
+}
+
+header h1 {
+    margin: 0; /* Remove margin from h1 */
+    font-size: 2em; /* Set font size of h1 to 2em */
+}
+
+/* Navigation Styles */
+nav {
+    width: 200px; /* Set the width of the navigation bar to 200px */
+    background-color: #336699; /* Set the background color of the navigation bar */
+    float: left; /* Float the navigation bar to the left */
+    padding: 10px; /* Set padding to 10px */
+    height: 800px; /* Set the height of the navigation bar to fill the parent container */
+    box-sizing: border-box; /* Include padding in the height calculation */
+}
+
+nav ul {
+    font-size: 1.2em; /* Set the font size of the navigation list */
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding from the navigation list */
+    margin: 0; /* Remove margin from the navigation list */
+}
+
+nav li {
+    margin: 10px 0; /* Set top and bottom margin of navigation list items to 10px */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #252668; /* Set link text color */
+    display: block; /* Display links as block elements */
+    font-weight: bold; /* Set link text to bold */
+}
+
+/* Content Styles */
+#content {
+    margin-left: 220px; /* Set left margin of the content area to 220px to avoid overlapping with the navigation bar */
+    padding: 20px; /* Set padding of the content area to 20px */
+    background: white; /* Set background color of the content area to white */
+}
+
+img[src="coast.jpg"] {
+    float: left;
+    padding-right: 20px;
+}
+
+h2 {
+    color: #3399CC; /* Set color of h2 headers */
+    font-family: Georgia, "Times New Roman", serif; /* Set font of h2 headers */
+}
+
+.resort {
+    color: #3399CC; /* Set text color of elements with class "resort" */
+    font-weight: bold; /* Set text to bold for elements with class "resort" */
+}
+
+/* Custom List Styles */
+ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding from lists */
+}
+
+#content ul li::before {
+    content: url('marker.gif'); 
+    display: inline-block;
+    margin-right: 10px; 
+    vertical-align: middle; 
+}
+
+/* Contact Info Styles */
+#contact {
+    font-size: 90%; /* Set font size of contact info to 90% */
+    margin-top: 20px; /* Set top margin of contact info to 20px */
+}
+
+/* Footer Styles */
+footer {
+    margin-left: 220px; /* Set left margin of the footer to 220px to avoid overlapping with the navigation bar */
+    font-family: Georgia, "Times New Roman", serif; /* Set font of the footer */
+    left: 0;
+    bottom: 0;
+    font-style: oblique;
+    padding: 20px; /* Set padding of the footer to 20px */
+    background: white; /* Set background color of the footer to white */
+    color: #666666; /* Set text color of the footer */
+    margin-top: 20px; /* Set top margin of the footer to 20px */
+}
+
+footer a {
+    color: #3399CC; /* Set link text color in the footer */
+    text-decoration: none; /* Remove underline from links in the footer */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Set underline on hover for links in the footer */
+}
